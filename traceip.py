@@ -73,7 +73,7 @@ async def ip(_, message):
         **Hosting:** `{response['hosting']}`"""
         await m.edit_text(text, parse_mode="markdown")
     else:
-        m.edit_text("Unable To Find Info!")
+        await m.edit_text("Unable To Find Info!")
 
 
 app.run()
