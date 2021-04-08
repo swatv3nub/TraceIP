@@ -1,0 +1,35 @@
+{
+    "name": "IP Tracer",
+    "description": "Trace IP",
+    "keywords": [
+        "IP"
+    ],
+    "website": "https://github.com/swatv3nub",
+    "repository": "https://github.com/swatv3nub/TraceIP",
+    "success_url": "https://telegram.dog/ProjectHackfreaks",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
