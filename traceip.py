@@ -44,7 +44,7 @@ async def ip(_, message):
         searchip = searchip[1]
         m = await message.reply_text("Searching...")
     try:
-        url = requests.get(f"http://ip-api.com/json/{searchip}")
+        url = requests.get(f"http://ip-api.com/json/{searchip}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query")
         response = json.loads(url.text)
         text = f"""
         **Timestamp:** `{datetime.now()}`
