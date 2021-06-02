@@ -9,7 +9,7 @@ I simple Bot Source to Scrape IP info from
 
 * For Heroku Deploy Click [[Here]](https://heroku.com/deploy?template=https://github.com/swatv3nub/TraceIP)
 
-* For Local Host, Edit the [[theconfig.py]](https://github.com/swatv3nub/TraceIP/blob/Alpha/theconfig.py), and Run the Bot using `python3 -m traceip.py`
+* For Local Host, Edit the [[config.py]](https://github.com/swatv3nub/TraceIP/blob/Alpha/config.py), and Run the Bot using `python3 -m traceip.py`
 
 ## Report
 
