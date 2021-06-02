@@ -5,6 +5,7 @@ from datetime import datetime
 from pyrogram import Client, filters
 from config import API_ID, API_HASH, BOT_TOKEN 
 #edit config.py for self host
+from functools import partial
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 command = partial(filters.command, prefixes=["!", "/"])
