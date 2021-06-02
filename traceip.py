@@ -72,7 +72,7 @@ async def ip(_, message):
         **Proxy:** `{response['proxy']}`
         **Hosting:** `{response['hosting']}`"""
         await m.edit_text(text, parse_mode="markdown")
-    else:
+    except:
         await m.edit_text("Unable To Find Info!")
 
 
