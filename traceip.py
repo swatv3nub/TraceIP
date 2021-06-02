@@ -3,13 +3,13 @@ import json
 import asyncio
 from datetime import datetime
 from pyrogram import Client, filters
-from theconfig import API_ID, API_HASH, BOT_TOKEN 
-#edit theconfig.py for self host
+from config import API_ID, API_HASH, BOT_TOKEN 
+#edit config.py for self host
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 command = partial(filters.command, prefixes=["!", "/"])
 
-start_text = f"Hello {message.from_user.mention}, Thank You For Using me, I can Help You Search Info of an IP\n**Syntax:** `/ip [ip]`\n\nI won't force anyone to Join My Channel by adding a Force Sub, But it would be very nice if you join my channel @ProjectHackfreaks"
+start_text = f"Hello {message.from_user.mention}, Thank You For Using me, I can Help You Search Info of an IP\n**Syntax:** `/ip [ip]`\n\nI won't force anyone to Join Our Channel by adding a Force Sub, But it would be very nice if you join our channel @BotZHub"
 
 app = Client("traceip", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
@@ -31,7 +31,7 @@ async def start(_, message):
     
 @app.on_message(command("help"))
 async def help(_, message):
-    await message.reply_text("Use the Following Syntax\n/ip [ip], Report Errors in @TheCodentsSupport")
+    await message.reply_text("Use the Following Syntax\n/ip [ip], Commands starts with either / or !. Report Errors in @BotzHubChat")
     
 
 @app.on_message(command("ip"))

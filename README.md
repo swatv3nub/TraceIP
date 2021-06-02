@@ -13,7 +13,7 @@ I simple Bot Source to Scrape IP info from
 
 ## Report
 
-Report Issues in [@TheCodentsSupport](https://telegram.dog/TheCodentsSupport)
+Report Issues in [@BotzHubChat](https://telegram.dog/BotzHubChat)
 
 ## Credits
 

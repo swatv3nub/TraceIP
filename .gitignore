@@ -1,4 +1,8 @@
 __pycache__
-config.py
-ip_tracer_bot.session
-ip_tracer_bot*
+*.session
+*.session-journal
+venv/
+env/
+.vscode/
+.idea/
+
